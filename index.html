@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Bree+Serif&family=Merriweather:wght@300;400;700;900&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./src/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- html for your weather -->
+    <div class="wrappar">
+        <!-- heading weather app -->
+        <h1 class="main_heading">Weather App</h1>
+        <!-- div for your weather and search weather -->
+        <div class="divForHelp">
+            <div class="your_search_weather">
+                <!-- your weather button  -->
+                <div class="tab" user_weather>
+                    Your Weather
+                </div>
+                <div class="tab" search_weather>
+                    Search Weather
+            </div>
+        </div>
+        
+        </div>
+        <div class="weather_container">
+            <!-- grant location  -->
+            <div class="grant_location">
+                <img src="./src/location.png" alt="location image" loading="lazy" width="80" height="80">
+                <p>grant location access</p>
+                <p>Allow access to get weather information</p>
+                <button class="grant_access_btn" grant_access_btn>Grant access</button>
+            </div>
+            <!-- search city -->
+            <div class="divForHelp">
+                <form class="search_form" search_form>
+                    <input type="text" placeholder="search for city..." dataSearch_input>
+                    <button class="btn" type="submit">
+                        <img src="./src/search.png" alt="" loading="lazy" width="20" height="20">
+                    </button>
+                </form>  
+            </div>
+                  
+            
+            <!-- loading container -->
+            <div class="loading">
+                <img src="./src/loading.gif" alt=""height="150" width="150">
+                <p>loading...</p>
+            </div>
+            
+            <!-- weather info container -->
+            <div class="divForHelp">
+                <div class="weather_info_container">
+                    <!-- city name and flag -->
+                    <div class="city_name_flag">
+                        <p data_city_name></p><!--dynamic-->
+                        <img src="" alt="" data_country_img width="35" height="35">
+                    </div>
+                    <!-- weather condition -->
+                    <p data_description></p><!--like haze-->
+                    <img src="" alt="" data_description_icon class="data_description_icon"><!--like haze image-->
+                    <!-- temperature -->
+                    <h3 temp></h3>
+    
+                    <!-- 3 divs -->
+                    <!-- 1 wind speed -->
+                    <div class="three_divs">
+                        <div class="parameter">
+                            <img src="./src/wind.png" alt="">
+                            <p>WINDSPEED</p>
+                            <p data_windSpeed></p>
+                        </div>
+                        <div class="parameter">
+                            <img src="./src/humidity.png" alt="">
+                            <p>HUMIDITY</p>
+                            <p data_humidity></p>
+    
+                        </div>
+                        <div class="parameter">
+                            <img src="./src/cloud.png" alt="">
+                            <p>CLOUD</p>
+                            <p data_cloud></p>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    
+}
+.wrappar{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);
+    overflow-x:hidden ;
+    overflow-y: auto;
+    color: var(--colorLight2);
+}
+:root {
+    --colorDark1: #112D4E;
+    --colorDark2: #3F72AF;
+    --colorLight1: #DBE2EF;
+    --colorLight2: #F9F7F7;
+}
+.main_heading{
+    text-align: center;
+    color: var(--colorLight2);
+    padding-top: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.divForHelp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.your_search_weather{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 650px;
+    margin: 4rem 0 0 0;
+}
+.tab{
+    cursor: pointer;
+    font-size: 0.800rem;
+    letter-spacing: 1.75px;
+    padding: 5px 8px;
+}
+
+.current_tab{
+    border-radius: 4px;
+    background-color: rgb(219, 226, 239,0.5);
+    
+}
+
+/* frant loaction */
+.grant_location{
+    display: none;
+}
+.grant_location.active{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 300px;
+    font-size:0.85rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 1.75rem;
+    letter-spacing: 0.75px;;
+}
+.grant_location p:first-of-type{
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.grant_location p:last-of-type{
+    /* margin-top: -14rem; */
+    font-size:0.85rem;
+    font-weight: 500;
+    /* margin-top: 0.75rem; */
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.75px;
+}
+.grant_location .grant_access_btn{
+    padding: 0.75rem 0.9rem;
+    background-color: var(--colorDark2);
+    color: var(--colorLight2);
+    font-size: 0.85rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    
+}
+/* loader */
+
+.loading{
+    display: none;
+}
+
+.loading.active{
+    /* display: block; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+.loading p{
+    position: relative;
+    left: 5px;
+    text-transform: capitalize;
+    font-weight: 400;
+
+}
+
+/* your weather */
+
+.weather_info_container{
+    display: none;
+}
+.weather_info_container.active{
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 700px; 
+    /* justify-content: space-evenly; */
+} 
+.weather_info_container.active .city_name_flag{
+    display: flex;
+    gap: 11px;
+}
+.weather_info_container.active .city_name_flag p{
+    margin: 0;
+    font-size: 1.9rem;
+    text-transform: capitalize;
+    position: relative;
+}
+.weather_info_container.active .city_name_flag img{
+    margin: 0;
+}
+.weather_info_container.active p{
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+.weather_info_container.active .data_description_icon{
+    margin-top: 0.5rem;
+    height: 80px;
+    width: 80px;
+}
+.weather_info_container.active h3{
+    font-size: 2.3rem;
+    font-weight: 900;
+    margin-top: 0.3rem;
+    margin-bottom: 1.3rem;
+} 
+
+.three_divs{
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 1rem;
+}
+.parameter{
+    height: 100%;
+    width: 13rem;
+    background-color: rgb(219, 226, 239,0.5);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.parameter img{
+    margin-top: 0.5rem;
+    height: 50px;
+    width: 50px;
+}
+.parameter p:first-of-type{
+    margin-top: -0.01rem;
+}
+.parameter p:last-of-type{
+    margin-top: -0.01rem;
+    margin-bottom: 0.5rem;
+}
+/* search form */
+.search_form.active{
+    display: flex;
+    margin-top: 2.5rem;
+    justify-content: center;
+    gap: 10px;
+
+   
+}
+.search_form input{
+
+    all:unset;
+    width: 550px;
+    height:40px;
+    padding: 0 20px;
+    background-color:rgba(219, 226, 239, 0.55) !important;
+    border-radius: 10px;
+}
+.search_form input::placeholder{
+    text-transform: capitalize;
+    color: var(--colorLight2);
+}
+.search_form button{
+    background-color:rgba(219, 226, 239, 0.55) !important;
+    border: 0;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+.search_form{
+    display: none;
+}
+.active{
+    display: block;
+}
